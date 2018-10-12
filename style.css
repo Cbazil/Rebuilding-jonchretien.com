@@ -116,7 +116,7 @@ a {
 
 /* Image links and effects */
 .img_hover:hover {
-    opacity: 0.9;;
+    opacity: 0.6;
 }
 
 
@@ -137,7 +137,7 @@ a {
     margin: 0;
 } 
 
-img {
+/* img {
     width: 100%;
 }
 #pic1 {
@@ -154,7 +154,7 @@ img {
 }
 #pic5 {
     grid-area: right2;
-}
+} */
 #photo_Gal {
     display: block;
     border-bottom: 1px solid gray;
@@ -165,13 +165,37 @@ img {
     
 }
 
-@media only screen and (min-width: 468px){
-    #photo_Gal {
+@media only screen and (min-width: 480px){
+    /* #photo_Gal {
         display: grid;
-        /* grid-gap: 24px; */
-        grid-template-areas: 'left1 right1'
-                            'main main'
-                            'left2 right2';
+        grid-gap: 24px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        width: 100%;
+    } */
+
+    #firstRow{
+        display: grid;
+        grid-gap: 24px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        width: 100%;
+    }
+
+    #secondRow{
+        display: grid;
+        grid-gap: 24px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        width: 100%;
+    }
+
+    #thirdRow{
+        display: grid;
+        grid-gap: 24px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        width: 100%;
     }
 } 
 #mus_Gal {
@@ -183,7 +207,7 @@ img {
     padding-bottom: 60px;
 
 }
-@media only screen and (min-width: 468px) {
+@media only screen and (min-width: 480px) {
     #mus_Gal {
         display: grid;
         grid-gap: 24px;
@@ -220,7 +244,7 @@ nav{
     padding-left: 0px;
     margin-left: 0px;    
 }
-@media only screen and (min-width: 468px){
+@media only screen and (min-width: 480px){
    .mus_item {
         width: 280px;
         height: 280px;    
