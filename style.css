@@ -11,12 +11,17 @@ body {
     display: block;
     margin: 35px;
 }
+@media only screen and (min-width: 480px){
+    body{
+        margin: 55px;
+    }
+}
 /* Website margins */
 .container {
     margin: 0 auto;
     max-width: 1240px;
-}Zero padding
-/*  */
+}
+/* Zero padding */
 a, body, div {
     padding: 0;
 }
