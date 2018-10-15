@@ -88,6 +88,7 @@ a {
     text-decoration: none;
     color: #ff3;
 }
+
 /* Gallery Container */
 #grid_Gal {
     display: grid;
@@ -115,8 +116,9 @@ a {
 }
 
 /* Image links and effects */
-.img_hover:hover {
+a:hover {
     opacity: 0.6;
+    color: grey;
 }
 
 
@@ -137,7 +139,7 @@ a {
     margin: 0;
 } 
 
-/* img {
+img {
     width: 100%;
 }
 #pic1 {
@@ -154,7 +156,7 @@ a {
 }
 #pic5 {
     grid-area: right2;
-} */
+}
 #photo_Gal {
     display: block;
     border-bottom: 1px solid gray;
@@ -166,15 +168,17 @@ a {
 }
 
 @media only screen and (min-width: 480px){
-    /* #photo_Gal {
+    #photo_Gal {
         display: grid;
         grid-gap: 24px;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,1fr);
-        width: 100%;
-    } */
+        grid-template-areas: 'left1 right1'
+                            'main main'
+                            'left2 right2';
+    }
 
-    #firstRow{
+/* Garths Grid , Not responsive tho */
+
+    /* #firstRow{
         display: grid;
         grid-gap: 24px;
         grid-template-columns: repeat(2,1fr);
@@ -197,7 +201,9 @@ a {
         grid-template-rows: repeat(1,1fr);
         width: 100%;
     }
-} 
+}  */
+
+
 #mus_Gal {
     display: grid;
     /* grid-gap: 24px; */
@@ -229,6 +235,7 @@ img_item {
     float: left;
     margin-right: 20px;
     padding: 0;
+    text-decoration-style: none;
     /* margin-right: 0px; */
 }
 nav{
@@ -251,3 +258,7 @@ nav{
          padding-bottom: 40px;
     }
 }
+/* li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+} */
