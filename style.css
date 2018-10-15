@@ -1,6 +1,5 @@
-html {
-    -webkit-font-smoothing: antialiased;
-}
+
+/* Body position and styling */
 body {
     background-color: black;
     color: #ccc;
@@ -10,7 +9,7 @@ body {
     line-height: 1.4;
     padding: 40;
     display: block;
-    margin: 56px;
+    margin: 35px;
 }
 /* Website margins */
 .container {
@@ -35,6 +34,7 @@ a, body, div {
         padding-bottom: 60px;
     }
 }
+/* Circle image at the very top */
 #img_prop {
     border-radius: 50%;
     width: 120px;
@@ -59,8 +59,13 @@ h1, h2{
 .psize2 {
     margin-top: -4px;
     font-size: 24px;
-    margin-bottom: -4px;
+    margin-bottom: -4px
 }
+.psize20 {
+    margin-top: -4px;
+    font-size: 20px;
+    margin-bottom: -4px
+} 
 /* Font size 3 */
 .psize3 {
     font-size: 14px;
@@ -89,7 +94,7 @@ a {
     color: #ff3;
 }
 
-/* Gallery Container */
+/* Gallery Container / Selected Work Section*/
 #grid_Gal {
     display: grid;
     grid-gap: 24px;
@@ -98,16 +103,17 @@ a {
     margin-bottom: 60px;
     padding-bottom: 60px;
 }
+/* Media queries for responsiveness */
 @media only screen and (min-width: 480px){
     #grid_Gal {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media only screen  and (min-width: 900px){
     #grid_Gal {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
 
     }
     .grid_img_size {
@@ -158,6 +164,7 @@ img {
 #pic5 {
     grid-area: right2;
 }
+/* photo gallery mobile view */
 #photo_Gal {
     display: block;
     border-bottom: 1px solid gray;
@@ -167,7 +174,8 @@ img {
     padding-bottom: 60px;
     
 }
-
+/* Media query for table and above*/
+/* Used grid template area format */
 @media only screen and (min-width: 480px){
     #photo_Gal {
         display: grid;
@@ -176,35 +184,9 @@ img {
                             'main main'
                             'left2 right2';
     }
+}
 
-/* Garths Grid , Not responsive tho */
-
-    /* #firstRow{
-        display: grid;
-        grid-gap: 24px;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,1fr);
-        width: 100%;
-    }
-
-    #secondRow{
-        display: grid;
-        grid-gap: 24px;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(1,1fr);
-        width: 100%;
-    }
-
-    #thirdRow{
-        display: grid;
-        grid-gap: 24px;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,1fr);
-        width: 100%;
-    }
-}  */
-
-
+/* Currently listen section */
 #mus_Gal {
     display: grid;
     /* grid-gap: 24px; */
@@ -214,27 +196,34 @@ img {
     padding-bottom: 60px;
 
 }
-@media only screen and (min-width: 480px) {
+/* @media only screen and (min-width: 480px) {
     #mus_Gal {
         display: grid;
         grid-gap: 24px;
         grid-template-columns: auto auto;
     }
-}
-@media only screen and (min-width: 900px) {
+} */
+@media only screen and (min-width: 480px) {
     #mus_Gal {
         display: grid;
         grid-gap: 24px;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 img_item {
-    width: 300%;
+    width: 100%;
 }
+/* footer sections with social media links */
+.footer_list{
+    padding-left: 0px;
+    margin-left: 0px; 
+
+}
+
 .footer_list_item {
     list-style-type: none;
     float: left;
-    margin-right: 20px;
+    margin-right: 14.5px;
     padding: 0;
     text-decoration-style: none;
     /* margin-right: 0px; */
@@ -243,20 +232,25 @@ nav{
     display: block;
 }
 .footer_cr {
-    float: right;
+    display: block;
+}
+@media only screen and (min-width: 768px){
 
+    .footer_cr {
+    float: right;
+    }
 }
 #footer_sec {
     margin-bottom: 40px;
     padding-bottom: 40px;
-    padding-left: 0px;
-    margin-left: 0px;    
+   
 }
 @media only screen and (min-width: 480px){
    .mus_item {
-        width: 280px;
-        height: 280px;    
-         padding-bottom: 40px;
+        /* width: 280px;
+        height: 280px;     */
+        width: 100%;
+        padding-bottom: 40px;
     }
 }
 /* li {
