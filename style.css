@@ -142,6 +142,7 @@ a:hover {
 img {
     width: 100%;
 }
+/* Assigned grid-area names */
 #pic1 {
     grid-area: left1;
 }
