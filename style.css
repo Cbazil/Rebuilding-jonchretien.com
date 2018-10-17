@@ -46,6 +46,16 @@ a, body, div {
     height: 120px;
     margin-bottom: -30px;
 }
+/* self learning */
+#img_prop:hover {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-bottom: -20px;
+    border: 10px solid #ff3;
+}
+/* Added a little animation to the img_prop id above^^ nothing fancy just improving on hovering circle images */
+
 /* Header font propertes */
 h1, h2{
     font-size: 45px;
@@ -256,6 +266,7 @@ nav{
         padding-bottom: 40px;
     }
 }
+/* Screen view under 768px */
 @media only screen and (max-width: 768px){
     .footer_list{
         display: flex;
